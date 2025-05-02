@@ -1,0 +1,21 @@
+.card {
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.table-responsive {
+  border-radius: 12px;
+  overflow: hidden;
+}
+h4 {
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+.dashboard-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}

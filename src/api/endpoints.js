@@ -1,0 +1,6 @@
+export const API_ENDPOINTS = {
+  PRODUCT_CATEGORY: import.meta.env.VITE_PRODUCTCATEGORY_URL,
+  SUPPLIER_STOCK: import.meta.env.VITE_SUPPLIERSTOCK_URL,
+  ORDER_SALE: import.meta.env.VITE_ORDERSALE_URL,
+  AUTH: import.meta.env.VITE_AUTHSERVER_URL,
+};
