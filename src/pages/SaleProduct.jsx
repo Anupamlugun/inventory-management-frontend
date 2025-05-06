@@ -3,7 +3,7 @@ import { useForm, useFieldArray, Controller } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { saveSaleOrder } from "../store/thunk/saleOrderThunk";
 import { fetchPurchaseCount } from "../store/thunk/purchaseOrderThunk";
-import { fetchCategories } from "../store/thunk/CategoryThunk";
+import { fetchCategories } from "../store/thunk/categoryThunk";
 import { fetchProductsByCategoryAndType } from "../store/thunk/productThunks";
 
 const MIN_GST = 0.05;

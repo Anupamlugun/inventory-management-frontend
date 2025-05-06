@@ -7,7 +7,7 @@ import {
   savePurchaseOrder,
 } from "../store/thunk/purchaseOrderThunk";
 import { fetchSuppliers } from "../store/thunk/supplierThunk";
-import { fetchCategories } from "../store/thunk/CategoryThunk";
+import { fetchCategories } from "../store/thunk/categoryThunk";
 import { fetchProductsByCategoryAndType } from "../store/thunk/productThunks";
 
 const PurchaseProduct = () => {

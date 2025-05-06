@@ -3,7 +3,7 @@ import {
   fetchCategoriesPage,
   saveCategory,
   updateCategory,
-} from "../store/thunk/CategoryThunk";
+} from "../store/thunk/categoryThunk";
 import { useEffect, useState } from "react";
 import { useAuth } from "../hooks/useAuth";
 import { yupResolver } from "@hookform/resolvers/yup";

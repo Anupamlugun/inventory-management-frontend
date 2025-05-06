@@ -5,7 +5,7 @@ import {
   updateProduct,
   deleteProduct,
 } from "../store/thunk/productThunks";
-import { fetchCategories } from "../store/thunk/CategoryThunk";
+import { fetchCategories } from "../store/thunk/categoryThunk";
 
 import { useEffect, useState } from "react";
 import { useAuth } from "../hooks/useAuth";
