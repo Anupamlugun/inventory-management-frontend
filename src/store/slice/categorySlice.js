@@ -5,7 +5,7 @@ import {
   fetchCategoriesPage,
   saveCategory,
   updateCategory,
-} from "../thunk/CategoryThunk";
+} from "../thunk/categoryThunk";
 
 const categorySlice = createSlice({
   name: "categories",
