@@ -61,8 +61,19 @@ const Product = () => {
   };
 
   const handleDelete = (product_id) => {
-    dispatch(deleteProduct(product_id)).then(() => {
+    dispatch(deleteProduct(product_id)).then((response) => {
       dispatch(fetchProductsPage({ page: pageNumber, size: pageSize }));
+
+      if (response.payload === "Product is in stock, cannot delete") {
+        setAlert({
+          show: true,
+          message: "Product is in stock, cannot delete",
+          variant: "danger",
+        });
+        setTimeout(() => setAlert({ ...alert, show: false }), 4000);
+        return;
+      }
+
       setAlert({
         show: true,
         message: "Product deleted successfully",
