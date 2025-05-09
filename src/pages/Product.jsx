@@ -120,7 +120,7 @@ const Product = () => {
         type: "manual",
         message: "Products already exist",
       });
-    } else if (response.payload.includes("successfully")) {
+    } else if (response.payload == "Product saved successfully") {
       setAlert({
         show: true,
         message: "Product saved successfully",
@@ -128,6 +128,13 @@ const Product = () => {
       });
 
       dispatch(fetchProductsPage({ page: pageNumber, size: pageSize }));
+      setTimeout(() => setAlert({ ...alert, show: false }), 4000);
+    } else if (response.payload === "Product updated successfully") {
+      setAlert({
+        show: true,
+        message: "Product updated successfully",
+        variant: "success",
+      });
       setTimeout(() => setAlert({ ...alert, show: false }), 4000);
     }
   };
