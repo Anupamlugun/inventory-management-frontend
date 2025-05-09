@@ -7,7 +7,7 @@ import { fetchCategories } from "../store/thunk/categoryThunk";
 import { fetchProductsByCategoryAndType } from "../store/thunk/productThunks";
 
 const MIN_GST = 0.05;
-const MAX_GST = 0.18;
+const MAX_GST = 0.1;
 const MAX_PROFIT = 0.1;
 const MIN_PROFIT = 0.05;
 
@@ -94,11 +94,13 @@ const SaleProduct = () => {
     const isPremiumProduct = product.product_price > 1000;
 
     // Use MIN rates for products over 1000, MAX otherwise
-    const profitMargin = isPremiumProduct ? MIN_PROFIT : MAX_PROFIT;
-    const gstRate = isPremiumProduct ? MIN_GST : MAX_GST;
+    const profitMargin = isPremiumProduct ? MAX_PROFIT : MIN_PROFIT;
+    const gstRate = isPremiumProduct ? MAX_GST : MIN_GST;
 
     const salePrice =
-      product.product_price * (1 + profitMargin) * (1 + gstRate);
+      product.product_price +
+      product.product_price * profitMargin +
+      product.product_price * gstRate;
 
     append({
       categoryId: selectedCategory,
