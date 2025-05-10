@@ -51,13 +51,6 @@ const Category = () => {
     }
   };
 
-  // const handleDelete = (id) => {
-  //   console.log(id);
-  //   dispatch(updateCategory(id)).then(() => {
-  //     dispatch(fetchCategoriesPage({ page: pageNumber, size: pageSize }));
-  //   });
-  // };
-
   const handleEdit = (id, category) => {
     console.log(id, category);
     // Set the value for fields using setValue
@@ -66,8 +59,6 @@ const Category = () => {
 
     setCategoryupdate(true);
   };
-  // let categoryName = watch("category_name");
-  // console.log(categoryName);
 
   const onSubmit = (data) => {
     console.log("Form submitted:", data);
@@ -197,14 +188,6 @@ const Category = () => {
                     <tr key={category.categoryId}>
                       <td>{category.category_name}</td>
                       <td>
-                        {/* <Button
-                          variant="danger"
-                          size="sm"
-                          className="me-2"
-                          onClick={() => handleDelete(category.categoryId)}
-                        >
-                          Delete
-                        </Button> */}
                         <Button
                           variant="warning"
                           size="sm"
