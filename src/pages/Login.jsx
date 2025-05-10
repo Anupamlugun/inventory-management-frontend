@@ -15,8 +15,10 @@ const schema = yup.object().shape({
     .string()
     .email("Please enter a valid email address")
     .required("Email is required"),
-  password: yup.string().required("Password is required"),
-  // .min(8, "Password must be at least 8 characters"),
+  password: yup
+    .string()
+    .required("Password is required")
+    .min(6, "Password must be at least 67 characters"),
 });
 
 const Login = () => {
@@ -147,9 +149,9 @@ const Login = () => {
               <Form.Control.Feedback type="invalid">
                 {errors.password?.message}
               </Form.Control.Feedback>
-              {/* <Form.Text className="text-muted">
-                At least 8 characters required
-              </Form.Text> */}
+              <Form.Text className="text-muted">
+                At least 6 characters required
+              </Form.Text>
             </Form.Group>
 
             <div className="d-grid gap-2">
