@@ -246,7 +246,7 @@ const Product = () => {
                     <tr key={product.productId}>
                       <td>{product.category_name}</td>
                       <td>{product.product_name}</td>
-                      <td>${product.product_price}</td>
+                      <td>₹{product.product_price}</td>
                       <td>
                         <Button
                           variant="danger"
