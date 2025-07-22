@@ -1,13 +1,33 @@
-# React + Vite
+# 💼 Inventory Management System — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> ⚙️ Frontend interface for the Inventory Management System  
+> Built using **React + Vite**, integrated with a Spring Boot microservices backend. Optimized for speed, accessibility, and modular development.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧭 Overview
 
-## Expanding the ESLint configuration
+This is the **React-based frontend** for the Inventory Management System. The UI is designed to be clean, responsive, and optimized for enterprise workflows across:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# inventory-management-frontend
+- Product and Category Management  
+- Supplier Stock Handling  
+- Order and Sales Processing  
+
+> 🔗 Backend Repo: [anupam-dev/inventory-backend](https://github.com/Anupamlugun/inventory-management-backend)
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer         | Technology                                      |
+|---------------|-------------------------------------------------|
+| **Framework** | React.js 19, Vite                               |
+| **Styling**   | Bootstrap                                      |
+| **Routing**   | React Router v6                                 |
+| **State**     | Redux                                           |
+| **Validation**| react-hook-form                                |
+| **Deployment**| Netlify                                         |
+| **Linting**   | ESLint                                           |
+| **Build Tool**| Vite                                            |
+
+---
