@@ -13,7 +13,7 @@ This is the **React-based frontend** for the Inventory Management System. The UI
 - Supplier Stock Handling  
 - Order and Sales Processing  
 
-> 🔗 Backend Repo: [anupam-dev/inventory-backend](https://github.com/Anupamlugun/inventory-management-backend)
+> 🔗 Backend Repo: [Anupamlugun/inventory-backend](https://github.com/Anupamlugun/inventory-management-backend)
 
 ---
 
